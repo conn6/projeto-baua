@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'urw';
+    src: url('fonts/URW\ Imperial\ W01\ Regular.ttf') format('truetype');
+}
+
+:root {
+    --sunset: #F7CA86; /* cor destaque */
+    --russet: #7A4419;  /* cor destaque */
+    --dark-cyan: #4B8F8C; /* cor fundo */
+    --columbia-blue: #B9CDDA; /* cor fundo */
+    --misty-rose: #FEE4DE; 
+    --black: #000000;
+
+
+    --fonte1: 'urw'
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+html, body {
+    min-height: 100vh;
+    background-color: #505050;
+    color: #c5c5c5;
+    font-family: var(--fonte1);
+}
+
+header {
+    background-color: var(--misty-rose);
+    padding: 1em;
+}
+
+.navbar a {
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    opacity: 0.4;
+}
+
+/* MAIN */
+
+section {
+    padding: 35vh 10vh;
+    font-size: 1.8vw;
+}
+
+.image {
+    background-color: var(--columbia-blue);
+    color: #000000;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.image > p {
+    display: inline-block; /* se transforma na caixa que se adapta ao tamanho do conteúdo */
+    background-color: #4b8f8c87;
+    padding: 2em 1em;
+}
+
+section#img01 {
+    background-image: url('img/main_baua_sem-fundo-g.png');
+    background-position: center center;
+}
